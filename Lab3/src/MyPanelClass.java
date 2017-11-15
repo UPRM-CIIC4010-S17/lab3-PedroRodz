@@ -26,26 +26,36 @@ public class MyPanelClass extends JPanel {
                         g.setColor(Color.RED);
                         g.fillRect(x1, y1, width+1, height+1);
                         
-//                        //Draw a border
-//                        g.setColor(Color.YELLOW);
-//                        g.drawRect(x1, y1, width, height);
-//                        
+                        //Draw a border
+                        g.setColor(Color.BLACK);
+                        g.drawRect(x1, y1, width, height);
+                        
 //                        //Draw a 2nd border
 //                        g.setColor(Color.WHITE);
 //                        g.drawRect(x1+5, y1+5, width-10, height-10);
-//                        
-//                        //Draw Line
-//                        g.setColor(Color.GRAY);
-//                        g.drawLine(x1, y1, x2, y2);
-//                        
-//                        //Draw 2nd Line
-//                        g.setColor(Color.BLACK);
-//                        g.drawLine(x2, y1, x1, y2);
-//                        
+                        
+                        //Draw Line
+                        g.setColor(Color.WHITE);
+                        g.fillRect(x1, y1+30, x2, 30);
+                        
+                        
+                        //Draw Line
+                        g.setColor(Color.WHITE);
+                        g.fillRect(x1, y1+90, x2, 30);
+                        
+                      //Draw Triangle
+                      Polygon triangle = new Polygon();
+                      triangle.addPoint(x1, y1);
+                      triangle.addPoint(x1 + 115, y1 + 75);
+                      triangle.addPoint(x1, y2);
+                      g.setColor(Color.BLUE);
+                      g.fillPolygon(triangle);
+                      
 //                        //Draw Oval
 //                        g.setColor(Color.LIGHT_GRAY);
 //                        g.fillOval(x1, y1, 55, 55);
-                        
+//                       
+//                        
 //                          Polygon p = new Polygon();
 //                          p.addPoint(x1 + 5, y1 + 25);
 //                          p.addPoint(x1 + 20, y1 + 10);
@@ -56,20 +66,21 @@ public class MyPanelClass extends JPanel {
 //                          p.addPoint(x1 + 15, y1 + 25);
 //                          g.setColor(Color.YELLOW);
 //                          g.drawPolygon(p);
-                        
-                        Polygon p2 = new Polygon();
-                        p2.addPoint(x1 + 25, y1 + 73);
-                        p2.addPoint(x1 + 41, y1 + 73);
-                        p2.addPoint(x1 + 47, y1 + 58);
-                        p2.addPoint(x1 + 53, y1 + 73);
-                        p2.addPoint(x1 + 69, y1 + 73);
-                        p2.addPoint(x1 + 56, y1 + 83);
-                        p2.addPoint(x1 + 61, y1 + 98);
-                        p2.addPoint(x1 + 47, y1 + 88);
-                        p2.addPoint(x1 + 34, y1 + 98);
-                        p2.addPoint(x1 + 38, y1 + 83);
-                        g.setColor(Color.WHITE);
-                        g.drawPolygon(p2);
+                          
+                          //Draw Star
+                          Polygon star = new Polygon();
+                          star.addPoint(x1 + 15, y1 + 68);
+                          star.addPoint(x1 + 31, y1 + 68);
+                          star.addPoint(x1 + 37, y1 + 55);
+                          star.addPoint(x1 + 43, y1 + 68);
+                          star.addPoint(x1 + 59, y1 + 68);
+                          star.addPoint(x1 + 46, y1 + 78);
+                          star.addPoint(x1 + 51, y1 + 93);
+                          star.addPoint(x1 + 37, y1 + 83);
+                          star.addPoint(x1 + 24, y1 + 93);
+                          star.addPoint(x1 + 28, y1 + 78);
+                          g.setColor(Color.WHITE);
+                          g.fillPolygon(star);
                           
                           
             }
